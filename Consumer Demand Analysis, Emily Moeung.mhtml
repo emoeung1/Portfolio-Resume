@@ -1,0 +1,776 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: file:///Users/emilymoeung/Library/Application%20Support/Claude/local-agent-mode-sessions/b4da7ede-8d39-4ada-a375-46602bdd6446/b05419ad-ddfb-47b5-a908-b16003fc09b5/local_381450ab-11a6-4125-8130-245dd5d5d388/outputs/emily-market-analysis.html
+Subject: Consumer Demand Analysis, Emily Moeung
+Date: Tue, 12 May 2026 09:32:38 -0500
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--NgH8WjuyzWpfnqvdbJPo41fjG4ghq0j59Bo9molrgH----"
+
+
+------MultipartBoundary--NgH8WjuyzWpfnqvdbJPo41fjG4ghq0j59Bo9molrgH----
+Content-Type: text/html
+Content-ID: <frame-D199627EB4CEAAEAF5CFB9FAE167BBA6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///Users/emilymoeung/Library/Application%20Support/Claude/local-agent-mode-sessions/b4da7ede-8d39-4ada-a375-46602bdd6446/b05419ad-ddfb-47b5-a908-b16003fc09b5/local_381450ab-11a6-4125-8130-245dd5d5d388/outputs/emily-market-analysis.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-cf4892bc-37be-46f3-bddf-3746a5c161b1@mhtml.blink" />
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<title>Consumer Demand Analysis, Emily Moeung</title>
+<link href=3D"https://fonts.googleapis.com/css2?family=3DNunito:wght@700;80=
+0;900&amp;family=3DPlus+Jakarta+Sans:wght@300;400;500;600&amp;display=3Dswa=
+p" rel=3D"stylesheet">
+
+
+</head>
+<body>
+<div class=3D"report-wrap">
+
+  <div class=3D"report-header">
+    <div class=3D"report-eyebrow">Market Intelligence Report</div>
+    <h1 class=3D"report-title">Demand Monitoring &amp; Market Timing:<br><e=
+m>GPUs, Consoles, &amp; Collectibles</em></h1>
+    <div class=3D"report-meta">
+      <div class=3D"report-meta-item"><strong>Period:</strong> January to J=
+une 2023</div>
+      <div class=3D"report-meta-item"><strong>Analyst:</strong> Emily Moeun=
+g</div>
+      <div class=3D"report-meta-item"><strong>Context:</strong> Market Stra=
+tegy Intern, Majestix</div>
+      <div class=3D"report-meta-item"><strong>Indicators:</strong> CPI, Sti=
+mulus Flows, Crypto Demand, Supply Chain Data</div>
+    </div>
+  </div>
+
+  <div class=3D"exec-summary">
+    <div class=3D"exec-label">Executive Summary</div>
+    <p class=3D"exec-text">
+      Working in the secondary market space, the core task was always the s=
+ame: identify what people want, source it before the broader market catches=
+ on, and move it at the right time. Doing that consistently required unders=
+tanding <em>why</em> prices move, not just tracking them. This report synth=
+esizes the economic research and market analysis that informed those sourci=
+ng decisions across GPUs, Consoles, &amp; Collectibles. The 2020=E2=80=9320=
+22 period created some of the most volatile secondary market conditions in =
+recent history =E2=80=94 driven by <strong>government stimulus, a crypto mi=
+ning boom, and global chip shortages</strong> =E2=80=94 and understanding t=
+hat backdrop was essential to making sense of where prices stood in 2023 an=
+d where they were heading.
+    </p>
+  </div>
+
+  <!-- SECTION 1: MACRO -->
+  <div class=3D"section">
+    <div class=3D"section-num">01 =E2=80=94 Macroeconomic Context</div>
+    <div class=3D"section-title">How Stimulus Money Turbocharged Consumer E=
+lectronics Demand</div>
+    <p class=3D"section-body">
+      Between March 2020 and March 2021, the U.S. government issued three r=
+ounds of direct stimulus payments totaling up to <strong>$3,200 per eligibl=
+e adult</strong>, alongside the Paycheck Protection Program (PPP) which inj=
+ected over $800 billion into the economy. With lockdowns in place, physical=
+ spending curtailed, and remote work driving the need for upgraded home set=
+ups, a significant portion of this liquidity flowed directly into consumer =
+electronics. Simultaneously, cryptocurrency prices surged, with Bitcoin rea=
+ching <strong>$69,000 in November 2021</strong> and Ethereum peaking above =
+$4,800. Because Ethereum used an ASIC-resistant mining algorithm, GPUs rema=
+ined the only viable mining hardware, creating a second massive demand chan=
+nel for graphics cards that distribution networks were never designed to ha=
+ndle. At the height of the boom, crypto miners accounted for an estimated <=
+strong>25% of all GPU purchases</strong> in the first half of 2021, accordi=
+ng to Jon Peddie Research.
+    </p>
+
+    <div class=3D"insights">
+      <div class=3D"insight">
+        <div class=3D"insight-n" style=3D"color:var(--blue);">$3,200</div>
+        <div class=3D"insight-label">Stimulus Per Adult</div>
+        <div class=3D"insight-desc">Three rounds of direct payments (Mar 20=
+20, Dec 2020, Mar 2021) injected unprecedented discretionary spending into =
+electronics and collectibles markets.</div>
+      </div>
+      <div class=3D"insight">
+        <div class=3D"insight-n" style=3D"color:var(--orange);">$69K</div>
+        <div class=3D"insight-label">BTC Peak (Nov 2021)</div>
+        <div class=3D"insight-desc">Bitcoin's price spike made GPU mining h=
+ighly profitable, adding a second massive demand driver on top of the gamin=
+g and remote work surge.</div>
+      </div>
+      <div class=3D"insight">
+        <div class=3D"insight-n" style=3D"color:var(--green);">9.1%</div>
+        <div class=3D"insight-label">Peak Inflation (Jun 2022)</div>
+        <div class=3D"insight-desc">As liquidity flooded the economy, infla=
+tion peaked, shrinking consumer spending by 2023 and triggering a secondary=
+ market correction.</div>
+      </div>
+    </div>
+
+    <div class=3D"chart-card">
+      <div class=3D"chart-title">U.S. CPI Inflation Rate vs. Bitcoin Price,=
+ 2021=E2=80=932023</div>
+      <div class=3D"chart-wrap"><canvas id=3D"macroChart" width=3D"1524" he=
+ight=3D"480" style=3D"display: block; box-sizing: border-box; height: 240px=
+; width: 762px;"></canvas></div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: METHODOLOGY -->
+  <div class=3D"section">
+    <div class=3D"section-num">02 =E2=80=94 Monitoring Methodology</div>
+    <div class=3D"section-title">How Demand Signals Were Tracked in Real Ti=
+me</div>
+    <p class=3D"section-body">
+      The research approach combined <strong>macroeconomic analysis with fi=
+eld-level observation</strong>, using economic indicators to establish the =
+broader demand context, then validating those signals through direct vendor=
+ engagement and consumer behavior observed at live events. This dual-layer =
+methodology allowed for higher-confidence sourcing decisions, as quantitati=
+ve models were tested against real-world conditions rather than applied in =
+isolation.
+    </p>
+
+    <div class=3D"method-grid">
+      <div class=3D"method-card">
+        <div class=3D"method-icon">
+          <svg viewBox=3D"0 0 36 36" fill=3D"none" xmlns=3D"http://www.w3.o=
+rg/2000/svg">
+            <circle cx=3D"12" cy=3D"14" r=3D"5" stroke=3D"#2557d6" stroke-w=
+idth=3D"2"></circle>
+            <circle cx=3D"26" cy=3D"10" r=3D"4" stroke=3D"#2557d6" stroke-w=
+idth=3D"2" opacity=3D".5"></circle>
+            <circle cx=3D"24" cy=3D"26" r=3D"4" stroke=3D"#2557d6" stroke-w=
+idth=3D"2" opacity=3D".3"></circle>
+            <path d=3D"M17 14h5M14 19l8 5" stroke=3D"#2557d6" stroke-width=
+=3D"1.5" stroke-linecap=3D"round"></path>
+          </svg>
+        </div>
+        <div class=3D"method-title">Field Research &amp; Event Intelligence=
+</div>
+        <div class=3D"method-desc">Attended trade shows, pop-ups, and vendo=
+r events to observe consumer behavior firsthand and build sourcing relation=
+ships. On-the-ground insights surfaced demand signals that quantitative dat=
+a alone could not capture.</div>
+      </div>
+      <div class=3D"method-card">
+        <div class=3D"method-icon">
+          <svg viewBox=3D"0 0 36 36" fill=3D"none" xmlns=3D"http://www.w3.o=
+rg/2000/svg">
+            <path d=3D"M5 28L12 18l7 5 7-10 5 4" stroke=3D"#7c3aed" stroke-=
+width=3D"2" stroke-linecap=3D"round" stroke-linejoin=3D"round"></path>
+            <path d=3D"M5 8h2M5 14h2M5 20h2M5 26h2" stroke=3D"#7c3aed" stro=
+ke-width=3D"1.5" stroke-linecap=3D"round" opacity=3D".4"></path>
+            <path d=3D"M5 6v24" stroke=3D"#7c3aed" stroke-width=3D"1.5" str=
+oke-linecap=3D"round" opacity=3D".3"></path>
+          </svg>
+        </div>
+        <div class=3D"method-title">Econometric Demand Modeling</div>
+        <div class=3D"method-desc">Applied economic indicators, CPI, inflat=
+ion rate, real consumer spending, and crypto asset prices, to model demand =
+trajectories across product categories. Correlated macro shifts with observ=
+ed secondary market pricing to identify early signals.</div>
+      </div>
+      <div class=3D"method-card">
+        <div class=3D"method-icon">
+          <svg viewBox=3D"0 0 36 36" fill=3D"none" xmlns=3D"http://www.w3.o=
+rg/2000/svg">
+            <path d=3D"M10 18h16M10 12h10M10 24h13" stroke=3D"#e85d04" stro=
+ke-width=3D"2" stroke-linecap=3D"round"></path>
+            <rect x=3D"4" y=3D"6" width=3D"28" height=3D"24" rx=3D"3" strok=
+e=3D"#e85d04" stroke-width=3D"2"></rect>
+            <circle cx=3D"28" cy=3D"12" r=3D"3" fill=3D"#e85d04"></circle>
+            <path d=3D"M27 11.5l1 1 2-2" stroke=3D"white" stroke-width=3D"1=
+.2" stroke-linecap=3D"round" stroke-linejoin=3D"round"></path>
+          </svg>
+        </div>
+        <div class=3D"method-title">Vendor &amp; Supply Chain Intelligence<=
+/div>
+        <div class=3D"method-desc">Tracked distribution constraints and ven=
+dor network capacity to anticipate supply gaps. Vendor relationships built =
+at events provided advance visibility into share timelines and restock wind=
+ows before they became publicly known.</div>
+      </div>
+      <div class=3D"method-card">
+        <div class=3D"method-icon">
+          <svg viewBox=3D"0 0 36 36" fill=3D"none" xmlns=3D"http://www.w3.o=
+rg/2000/svg">
+            <rect x=3D"4" y=3D"22" width=3D"6" height=3D"10" rx=3D"1.5" fil=
+l=3D"#059669"></rect>
+            <rect x=3D"13" y=3D"15" width=3D"6" height=3D"17" rx=3D"1.5" fi=
+ll=3D"#059669" opacity=3D".7"></rect>
+            <rect x=3D"22" y=3D"9" width=3D"6" height=3D"23" rx=3D"1.5" fil=
+l=3D"#059669" opacity=3D".4"></rect>
+            <path d=3D"M6 18l8-7 8 5 8-9" stroke=3D"#059669" stroke-width=
+=3D"2" stroke-linecap=3D"round" stroke-linejoin=3D"round"></path>
+          </svg>
+        </div>
+        <div class=3D"method-title">Data Synthesis &amp; Strategic Reportin=
+g</div>
+        <div class=3D"method-desc">Synthesized vendor data, pricing trends,=
+ and economic indicators into structured reports used for investment and so=
+urcing decisions. Translated raw market observations into actionable recomm=
+endations with results that could be tracked.</div>
+      </div>
+      <div class=3D"method-card" style=3D"grid-column:1/-1;">
+        <div class=3D"method-icon">
+          <svg viewBox=3D"0 0 36 36" fill=3D"none" xmlns=3D"http://www.w3.o=
+rg/2000/svg">
+            <rect x=3D"3" y=3D"8" width=3D"30" height=3D"20" rx=3D"3" strok=
+e=3D"#7c3aed" stroke-width=3D"2"></rect>
+            <path d=3D"M9 14h4M9 19h4" stroke=3D"#7c3aed" stroke-width=3D"1=
+.8" stroke-linecap=3D"round" opacity=3D".4"></path>
+            <circle cx=3D"22" cy=3D"16.5" r=3D"4" stroke=3D"#7c3aed" stroke=
+-width=3D"1.8"></circle>
+            <path d=3D"M26 20.5l4 4" stroke=3D"#7c3aed" stroke-width=3D"1.8=
+" stroke-linecap=3D"round"></path>
+            <path d=3D"M3 28h30" stroke=3D"#7c3aed" stroke-width=3D"1.5" st=
+roke-linecap=3D"round" opacity=3D".2"></path>
+          </svg>
+        </div>
+        <div class=3D"method-title">Web Infrastructure &amp; Inventory Moni=
+toring</div>
+        <div class=3D"method-desc">Applied working knowledge of retail back=
+end systems, request routing, and inventory endpoint behavior to monitor st=
+ock availability at scale. Configured proxy and ISP networks to distribute =
+monitoring across retailer infrastructure, enabling real-time visibility in=
+to restock events across multiple channels at the same timely.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: GPU -->
+  <div class=3D"section">
+    <div class=3D"section-num">03 =E2=80=94 NVIDIA GPU Market</div>
+    <div class=3D"section-title">The Mining-Driven Shortage &amp; Post-Cras=
+h Correction</div>
+    <p class=3D"section-body">
+      GPU demand from cryptocurrency mining is not new =E2=80=94 it traces =
+back to Bitcoin's early days in 2013, when consumer graphics cards were the=
+ primary mining hardware. That changed when custom ASICs replaced GPUs for =
+Bitcoin, making general-purpose cards unprofitable for BTC mining. The cycl=
+e restarted with Ethereum, which was intentionally designed with an ASIC-re=
+sistant mining algorithm, making GPUs the only viable mining hardware again=
+. This design choice is what made the 2020=E2=80=932022 shortage so severe:=
+ every GPU sold was competing between two entirely separate demand pools =
+=E2=80=94 gamers and miners =E2=80=94 with no dedicated supply chain for ei=
+ther.
+    </p>
+    <p class=3D"section-body">
+      NVIDIA's RTX 30-series launched in September 2020 at <strong>$699 MSR=
+P (RTX 3080)</strong>. According to research from Jon Peddie Research, cryp=
+to miners purchased an estimated <strong>25% of all GPUs produced in the fi=
+rst half of 2021</strong>. With pandemic-related chip shortages shrinking s=
+upply at the same timely, secondary market prices reached <strong>3x retail=
+ or higher</strong> by February 2021. The feedback loop of the shortage mad=
+e it worse: miners had little incentive to sell cards that were actively ge=
+nerating returns, further restricting secondary market supply. When Ethereu=
+m transitioned to proof-of-stake in September 2022, eliminating GPU mining =
+profitability overnight, miners began liquidating their entire fleets at th=
+e same timely. Combined with the RTX 40-series launch, the 30-series overco=
+rrected below MSRP by early 2023 =E2=80=94 creating a clear re-entry window=
+ before gaming demand stabilized prices.
+    </p>
+
+    <div class=3D"chart-card">
+      <div class=3D"chart-title">RTX 3080, Secondary Market Price vs. MSRP =
+(2020=E2=80=932023)</div>
+      <div class=3D"chart-wrap"><canvas id=3D"gpuChart" width=3D"1524" heig=
+ht=3D"480" style=3D"display: block; box-sizing: border-box; height: 240px; =
+width: 762px;"></canvas></div>
+    </div>
+
+    <div class=3D"findings">
+      <div class=3D"finding" style=3D"border-color:var(--orange);">
+        <div class=3D"finding-tag" style=3D"color:var(--orange);">Key Drive=
+r: Dual Demand Pool</div>
+        <div class=3D"finding-text">Ethereum's GPU-only mining design made =
+GPUs the only viable mining hardware, putting gamers and miners in direct c=
+ompetition for the same supply. At peak ETH prices, a single RTX 3080 could=
+ generate $8=E2=80=9312/day in mining revenue, making miners unwilling to s=
+ell even at 3x retail markup.</div>
+      </div>
+      <div class=3D"finding" style=3D"border-color:var(--blue);">
+        <div class=3D"finding-tag" style=3D"color:var(--blue);">Signal: Pos=
+t-Merge Liquidation Window</div>
+        <div class=3D"finding-text">Ethereum's shift to proof-of-stake in S=
+eptember 2022 made GPU mining instantly unprofitable. The resulting mass li=
+quidation of mining fleets pushed 30-series prices 10=E2=80=9320% below MSR=
+P by Q1 2023, a short-term pricing gap before organic gaming demand restore=
+d normal pricing.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: PS5 -->
+  <div class=3D"section">
+    <div class=3D"section-num">04 =E2=80=94 PlayStation 5</div>
+    <div class=3D"section-title">Supply Constraints, Remote Demand &amp; th=
+e Restock Race</div>
+    <p class=3D"section-body">
+      The PlayStation 5 launched in November 2020 at <strong>$499 MSRP</str=
+ong> into one of the worst supply environments in consumer electronics hist=
+ory. Sony's semiconductor supply was constrained by the same global chip sh=
+ortage affecting GPU manufacturers, while demand was amplified by locked-do=
+wn consumers with stimulus money and nowhere to spend it. Units retailed fo=
+r <strong>$800=E2=80=931,200</strong> on secondary markets through 2021=E2=
+=80=932022. Restocks were sporadic, unpredictable, and sold out within minu=
+tes, making automated monitoring and alert systems essential to capturing i=
+nventory at retail price before bots cleared stock.
+    </p>
+
+    <div class=3D"chart-card">
+      <div class=3D"chart-title">PlayStation 5, Secondary Market Price vs. =
+MSRP (2021=E2=80=932023)</div>
+      <div class=3D"chart-wrap"><canvas id=3D"ps5Chart" width=3D"1524" heig=
+ht=3D"480" style=3D"display: block; box-sizing: border-box; height: 240px; =
+width: 762px;"></canvas></div>
+    </div>
+
+    <div class=3D"findings">
+      <div class=3D"finding" style=3D"border-color:var(--purple);">
+        <div class=3D"finding-tag" style=3D"color:var(--purple);">Methodolo=
+gy: Restock Monitoring</div>
+        <div class=3D"finding-text">PS5 restocks at major retailers (Best B=
+uy, Target, Walmart) followed predictable patterns. Monitoring inventory en=
+dpoints and social signals allowed for advance positioning before public an=
+nouncements.</div>
+      </div>
+      <div class=3D"finding" style=3D"border-color:var(--green);">
+        <div class=3D"finding-tag" style=3D"color:var(--green);">Signal: Ma=
+rgin Compression (2023)</div>
+        <div class=3D"finding-text">By mid-2023, Sony had resolved the bulk=
+ of its supply constraints. Secondary margins compressed from 60=E2=80=9380=
+% premium to 5=E2=80=9310%, signaling a category exit point for resale-focu=
+sed inventory.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: COLLECTIBLES -->
+  <div class=3D"section">
+    <div class=3D"section-num">05 =E2=80=94 PSA-Graded Collectibles</div>
+    <div class=3D"section-title">Stimulus-Fueled Speculation &amp; the Mark=
+et Split</div>
+    <p class=3D"section-body">
+      The collectibles market followed the same stimulus-driven pattern as =
+electronics. Influencer coverage of Pok=C3=A9mon cards in early 2021, combi=
+ned with millions of people at home with extra cash and no live entertainme=
+nt, triggered a speculative wave that sent PSA-graded card prices up <stron=
+g>200=E2=80=93400%</strong> from pre-pandemic levels. By 2023, the broad ma=
+rket had corrected 40=E2=80=9360% as speculators exited. However, the corre=
+ction was not uniform: high-grade cards (PSA 9/10) in low-population, iconi=
+c sets retained value far better than bulk mid-grade inventory, showing tha=
+t the market had matured and only quality inventory held its value.
+    </p>
+
+    <div class=3D"chart-card">
+      <div class=3D"chart-title">PSA Collectibles Market, High-Grade vs. Br=
+oad Market Index (2020=E2=80=932023, Base: 100)</div>
+      <div class=3D"chart-wrap"><canvas id=3D"psaChart" width=3D"1524" heig=
+ht=3D"480" style=3D"display: block; box-sizing: border-box; height: 240px; =
+width: 762px;"></canvas></div>
+    </div>
+
+    <div class=3D"findings">
+      <div class=3D"finding" style=3D"border-color:var(--green);">
+        <div class=3D"finding-tag" style=3D"color:var(--green);">Insight: Q=
+uality Holds Value</div>
+        <div class=3D"finding-text">PSA 10 cards in low-pop sets declined o=
+nly 10=E2=80=9315% from peak, while the broad market fell 50%+. Concentrati=
+on in high-grade assets was the correct strategy entering the correction.</=
+div>
+      </div>
+      <div class=3D"finding" style=3D"border-color:var(--orange);">
+        <div class=3D"finding-tag" style=3D"color:var(--orange);">Risk: Bul=
+k Inventory</div>
+        <div class=3D"finding-text">Speculative buyers who held mid-grade c=
+ommon-set cards faced severe liquidity issues as the market cooled. Demand =
+monitoring via sell-through data flagged this deterioration early.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECOMMENDATION -->
+  <div class=3D"section">
+    <div class=3D"section-num">06 =E2=80=94 Strategic Takeaways</div>
+    <div class=3D"section-title">What the Data Indicated for H1 2023</div>
+    <div class=3D"rec">
+      <div class=3D"rec-label">Analyst Conclusion</div>
+      <div class=3D"rec-title">Macro Timing + Real-Time Monitoring =3D Sour=
+cing Edge</div>
+      <p class=3D"rec-body">
+        The core insight across all three categories was that <strong>macro=
+ signals and on-the-ground monitoring worked together</strong>, neither alo=
+ne was sufficient. CPI and crypto data explained why pricing was where it w=
+as; social monitoring, search trends, and restock alerts determined when an=
+d where to act.<br><br>
+        <strong>GPUs:</strong> The post-mining correction created a below-M=
+SRP acquisition window. Gaming demand remained structurally intact, making =
+this a clear buy signal for Q1 2023 with an expected recovery to 10=E2=80=
+=9315% above MSRP within 60=E2=80=9390 days.<br><br>
+        <strong>PS5:</strong> Supply normalization by mid-2023 shrank secon=
+dary margins to near zero. The category required exit or a pivot toward bun=
+dle configurations that maintained perceived value above commodity pricing.=
+<br><br>
+        <strong>Collectibles:</strong> Market maturation favored quality co=
+ncentration. Monitoring sell-through velocity on PSA 10 low-pop cards showe=
+d resilience while bulk inventory flagged as a liquidation priority.
+      </p>
+    </div>
+  </div>
+
+  <div class=3D"report-footer">
+    <div>
+      <div class=3D"footer-name">Emily Moeung</div>
+      <div class=3D"footer-role">Market Strategy Intern =C2=B7 Majestix =C2=
+=B7 Jan=E2=80=93Jun 2023</div>
+    </div>
+    <div style=3D"font-size:13px;color:var(--muted);">Sources: BLS CPI, FRE=
+D, CoinGecko, StockX, eBay sold listings, PSA Pop Report</div>
+  </div>
+
+</div>
+
+
+
+</body></html>
+------MultipartBoundary--NgH8WjuyzWpfnqvdbJPo41fjG4ghq0j59Bo9molrgH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIOOaBTMnFcQIG.woff2") format("woff2"); unicode-range: U+460-52F, U+1C=
+80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIMeaBTMnFcQIG.woff2") format("woff2"); unicode-range: U+301, U+400-45=
+F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIOuaBTMnFcQIG.woff2") format("woff2"); unicode-range: U+102-103, U+11=
+0-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+=
+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIO-aBTMnFcQIG.woff2") format("woff2"); unicode-range: U+100-2BA, U+2B=
+D-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U=
++1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2=
+C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofINeaBTMnFcQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+=
+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, =
+U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIOOaBTMnFcQIG.woff2") format("woff2"); unicode-range: U+460-52F, U+1C=
+80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIMeaBTMnFcQIG.woff2") format("woff2"); unicode-range: U+301, U+400-45=
+F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIOuaBTMnFcQIG.woff2") format("woff2"); unicode-range: U+102-103, U+11=
+0-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+=
+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIO-aBTMnFcQIG.woff2") format("woff2"); unicode-range: U+100-2BA, U+2B=
+D-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U=
++1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2=
+C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofINeaBTMnFcQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+=
+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, =
+U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIOOaBTMnFcQIG.woff2") format("woff2"); unicode-range: U+460-52F, U+1C=
+80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIMeaBTMnFcQIG.woff2") format("woff2"); unicode-range: U+301, U+400-45=
+F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIOuaBTMnFcQIG.woff2") format("woff2"); unicode-range: U+102-103, U+11=
+0-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+=
+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofIO-aBTMnFcQIG.woff2") format("woff2"); unicode-range: U+100-2BA, U+2B=
+D-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U=
++1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2=
+C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; fon=
+t-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li=
+01BKofINeaBTMnFcQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+=
+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, =
+U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A=
+69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1=
+, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+=
+20AB; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF=
+, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A=
+0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2") format("woff2=
+"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC=
+, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,=
+ U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A=
+69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1=
+, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+=
+20AB; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF=
+, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A=
+0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2") format("woff2=
+"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC=
+, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,=
+ U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A=
+69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1=
+, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+=
+20AB; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF=
+, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A=
+0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2") format("woff2=
+"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC=
+, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,=
+ U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A=
+69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1=
+, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+=
+20AB; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yygg_vbd-E.woff2") format("wo=
+ff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF=
+, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A=
+0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Plus Jakarta Sans"; font-style: normal; font-wei=
+ght: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/plusjak=
+artasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2") format("woff2=
+"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC=
+, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,=
+ U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--NgH8WjuyzWpfnqvdbJPo41fjG4ghq0j59Bo9molrgH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-cf4892bc-37be-46f3-bddf-3746a5c161b1@mhtml.blink
+
+@charset "utf-8";
+
+:root { --bg: #f7f5f2; --white: #ffffff; --ink: #1a1814; --ink2: #3d3a35; -=
+-muted: #8a8580; --border: #e2ddd8; --blue: #2557d6; --green: #059669; --or=
+ange: #e85d04; --purple: #7c3aed; }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+body { font-family: "Plus Jakarta Sans", sans-serif; background: var(--bg);=
+ color: var(--ink); }
+
+.report-wrap { max-width: 900px; margin: 0px auto; padding: 60px 40px 100px=
+; }
+
+.report-header { border-bottom: 2px solid var(--ink); padding-bottom: 32px;=
+ margin-bottom: 48px; }
+
+.report-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.14em=
+; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
+
+.report-title { font-family: Nunito, sans-serif; font-size: 48px; font-weig=
+ht: 900; line-height: 1.05; color: var(--ink); margin-bottom: 16px; letter-=
+spacing: -0.02em; }
+
+.report-title em { font-style: italic; color: var(--blue); }
+
+.report-meta { display: flex; gap: 32px; flex-wrap: wrap; margin-top: 20px;=
+ }
+
+.report-meta-item { font-size: 13px; color: var(--muted); }
+
+.report-meta-item strong { color: var(--ink2); font-weight: 600; }
+
+.exec-summary { background: var(--ink); border-radius: 16px; padding: 32px =
+36px; margin-bottom: 48px; color: white; }
+
+.exec-label { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; te=
+xt-transform: uppercase; color: rgba(255, 255, 255, 0.4); margin-bottom: 16=
+px; }
+
+.exec-text { font-size: 16px; line-height: 1.85; color: rgba(255, 255, 255,=
+ 0.85); font-weight: 300; }
+
+.exec-text strong { color: white; font-weight: 600; }
+
+.section { margin-bottom: 56px; }
+
+.section-num { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; t=
+ext-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+
+.section-title { font-family: Nunito, sans-serif; font-size: 28px; font-wei=
+ght: 800; color: var(--ink); margin-bottom: 16px; }
+
+.section-body { font-size: 15px; color: var(--ink2); line-height: 1.85; fon=
+t-weight: 300; margin-bottom: 28px; }
+
+.section-body strong { color: var(--ink); font-weight: 600; }
+
+.chart-card { background: var(--white); border: 1px solid var(--border); bo=
+rder-radius: 14px; padding: 28px 28px 20px; margin-bottom: 16px; }
+
+.chart-title { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; t=
+ext-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
+
+.chart-wrap { position: relative; height: 240px; }
+
+.insights { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; m=
+argin-bottom: 28px; }
+
+.insight { background: var(--white); border: 1px solid var(--border); borde=
+r-radius: 12px; padding: 20px; }
+
+.insight-n { font-family: Nunito, sans-serif; font-size: 36px; font-weight:=
+ 900; line-height: 1; margin-bottom: 6px; }
+
+.insight-label { font-size: 12px; font-weight: 700; letter-spacing: 0.07em;=
+ text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+
+.insight-desc { font-size: 13px; color: var(--muted); font-weight: 300; lin=
+e-height: 1.6; }
+
+.findings { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margi=
+n-bottom: 28px; }
+
+.finding { border-left: 3px solid; border-radius: 0px 10px 10px 0px; paddin=
+g: 18px 20px; background: var(--white); }
+
+.finding-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; t=
+ext-transform: uppercase; margin-bottom: 8px; }
+
+.finding-text { font-size: 14px; color: var(--ink2); line-height: 1.6; font=
+-weight: 300; }
+
+.method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; ma=
+rgin-bottom: 28px; }
+
+.method-card { background: var(--white); border: 1px solid var(--border); b=
+order-radius: 12px; padding: 22px; }
+
+.method-icon { width: 36px; height: 36px; margin-bottom: 12px; }
+
+.method-title { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; =
+text-transform: uppercase; color: var(--ink2); margin-bottom: 8px; }
+
+.method-desc { font-size: 13px; color: var(--muted); line-height: 1.65; fon=
+t-weight: 300; }
+
+.rec { background: linear-gradient(135deg, rgb(239, 246, 255), rgb(245, 243=
+, 255)); border: 1px solid rgb(199, 210, 254); border-radius: 14px; padding=
+: 28px 32px; }
+
+.rec-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text=
+-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
+
+.rec-title { font-family: Nunito, sans-serif; font-size: 22px; font-weight:=
+ 800; color: var(--ink); margin-bottom: 12px; }
+
+.rec-body { font-size: 14px; color: var(--ink2); line-height: 1.8; font-wei=
+ght: 300; }
+
+.rec-body strong { color: var(--ink); font-weight: 600; }
+
+.report-footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid=
+ var(--border); display: flex; justify-content: space-between; align-items:=
+ center; flex-wrap: wrap; gap: 12px; }
+
+.footer-name { font-family: Nunito, sans-serif; font-size: 18px; font-weigh=
+t: 800; color: var(--ink); }
+
+.footer-role { font-size: 13px; color: var(--muted); }
+------MultipartBoundary--NgH8WjuyzWpfnqvdbJPo41fjG4ghq0j59Bo9molrgH------
