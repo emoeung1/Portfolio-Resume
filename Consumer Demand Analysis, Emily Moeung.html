@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consumer Demand Analysis, Emily Moeung</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #f7f5f2; --white: #ffffff; --ink: #1a1814; --ink2: #3d3a35;
+    --muted: #8a8580; --border: #e2ddd8; --blue: #2557d6; --green: #059669;
+    --orange: #e85d04; --purple: #7c3aed;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--ink); }
+  .report-wrap { max-width: 900px; margin: 0 auto; padding: 60px 40px 100px; }
+
+  .report-header { border-bottom: 2px solid var(--ink); padding-bottom: 32px; margin-bottom: 48px; }
+  .report-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
+  .report-title { font-family: 'Nunito', sans-serif; font-size: 48px; font-weight: 900; line-height: 1.05; color: var(--ink); margin-bottom: 16px; letter-spacing: -.02em; }
+  .report-title em { font-style: italic; color: var(--blue); }
+  .report-meta { display: flex; gap: 32px; flex-wrap: wrap; margin-top: 20px; }
+  .report-meta-item { font-size: 13px; color: var(--muted); }
+  .report-meta-item strong { color: var(--ink2); font-weight: 600; }
+
+  .exec-summary { background: var(--ink); border-radius: 16px; padding: 32px 36px; margin-bottom: 48px; color: white; }
+  .exec-label { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 16px; }
+  .exec-text { font-size: 16px; line-height: 1.85; color: rgba(255,255,255,.85); font-weight: 300; }
+  .exec-text strong { color: white; font-weight: 600; }
+
+  .section { margin-bottom: 56px; }
+  .section-num { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+  .section-title { font-family: 'Nunito', sans-serif; font-size: 28px; font-weight: 800; color: var(--ink); margin-bottom: 16px; }
+  .section-body { font-size: 15px; color: var(--ink2); line-height: 1.85; font-weight: 300; margin-bottom: 28px; }
+  .section-body strong { color: var(--ink); font-weight: 600; }
+
+  .chart-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 28px 28px 20px; margin-bottom: 16px; }
+  .chart-title { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
+  .chart-wrap { position: relative; height: 240px; }
+
+  .insights { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+  .insight { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+  .insight-n { font-family: 'Nunito', sans-serif; font-size: 36px; font-weight: 900; line-height: 1; margin-bottom: 6px; }
+  .insight-label { font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .insight-desc { font-size: 13px; color: var(--muted); font-weight: 300; line-height: 1.6; }
+
+  .findings { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+  .finding { border-left: 3px solid; border-radius: 0 10px 10px 0; padding: 18px 20px; background: var(--white); }
+  .finding-tag { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
+  .finding-text { font-size: 14px; color: var(--ink2); line-height: 1.6; font-weight: 300; }
+
+  /* METHODOLOGY */
+  .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+  .method-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 22px; }
+  .method-icon { width: 36px; height: 36px; margin-bottom: 12px; }
+  .method-title { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink2); margin-bottom: 8px; }
+  .method-desc { font-size: 13px; color: var(--muted); line-height: 1.65; font-weight: 300; }
+
+  .rec { background: linear-gradient(135deg, #eff6ff, #f5f3ff); border: 1px solid #c7d2fe; border-radius: 14px; padding: 28px 32px; }
+  .rec-label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
+  .rec-title { font-family: 'Nunito', sans-serif; font-size: 22px; font-weight: 800; color: var(--ink); margin-bottom: 12px; }
+  .rec-body { font-size: 14px; color: var(--ink2); line-height: 1.8; font-weight: 300; }
+  .rec-body strong { color: var(--ink); font-weight: 600; }
+
+  .report-footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-name { font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 800; color: var(--ink); }
+  .footer-role { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="report-wrap">
+
+  <div class="report-header">
+    <div class="report-eyebrow">Market Intelligence Report</div>
+    <h1 class="report-title">Demand Monitoring & Market Timing:<br><em>GPUs, Consoles, & Collectibles</em></h1>
+    <div class="report-meta">
+      <div class="report-meta-item"><strong>Period:</strong> January to June 2023</div>
+      <div class="report-meta-item"><strong>Analyst:</strong> Emily Moeung</div>
+      <div class="report-meta-item"><strong>Context:</strong> Market Strategy Intern, Majestix</div>
+      <div class="report-meta-item"><strong>Indicators:</strong> CPI, Stimulus Flows, Crypto Demand, Supply Chain Data</div>
+    </div>
+  </div>
+
+  <div class="exec-summary">
+    <div class="exec-label">Executive Summary</div>
+    <p class="exec-text">
+      Working in the secondary market space, the core task was always the same: identify what people want, source it before the broader market catches on, and move it at the right time. Doing that consistently required understanding <em>why</em> prices move, not just tracking them. This report synthesizes the economic research and market analysis that informed those sourcing decisions across GPUs, Consoles, & Collectibles. The 2020–2022 period created some of the most volatile secondary market conditions in recent history — driven by <strong>government stimulus, a crypto mining boom, and global chip shortages</strong> — and understanding that backdrop was essential to making sense of where prices stood in 2023 and where they were heading.
+    </p>
+  </div>
+
+  <!-- SECTION 1: MACRO -->
+  <div class="section">
+    <div class="section-num">01 — Macroeconomic Context</div>
+    <div class="section-title">How Stimulus Money Turbocharged Consumer Electronics Demand</div>
+    <p class="section-body">
+      Between March 2020 and March 2021, the U.S. government issued three rounds of direct stimulus payments totaling up to <strong>$3,200 per eligible adult</strong>, alongside the Paycheck Protection Program (PPP) which injected over $800 billion into the economy. With lockdowns in place, physical spending curtailed, and remote work driving the need for upgraded home setups, a significant portion of this liquidity flowed directly into consumer electronics. Simultaneously, cryptocurrency prices surged, with Bitcoin reaching <strong>$69,000 in November 2021</strong> and Ethereum peaking above $4,800. Because Ethereum used an ASIC-resistant mining algorithm, GPUs remained the only viable mining hardware, creating a second massive demand channel for graphics cards that distribution networks were never designed to handle. At the height of the boom, crypto miners accounted for an estimated <strong>25% of all GPU purchases</strong> in the first half of 2021, according to Jon Peddie Research.
+    </p>
+
+    <div class="insights">
+      <div class="insight">
+        <div class="insight-n" style="color:var(--blue);">$3,200</div>
+        <div class="insight-label">Stimulus Per Adult</div>
+        <div class="insight-desc">Three rounds of direct payments (Mar 2020, Dec 2020, Mar 2021) injected unprecedented discretionary spending into electronics and collectibles markets.</div>
+      </div>
+      <div class="insight">
+        <div class="insight-n" style="color:var(--orange);">$69K</div>
+        <div class="insight-label">BTC Peak (Nov 2021)</div>
+        <div class="insight-desc">Bitcoin's price spike made GPU mining highly profitable, adding a second massive demand driver on top of the gaming and remote work surge.</div>
+      </div>
+      <div class="insight">
+        <div class="insight-n" style="color:var(--green);">9.1%</div>
+        <div class="insight-label">Peak Inflation (Jun 2022)</div>
+        <div class="insight-desc">As liquidity flooded the economy, inflation peaked, shrinking consumer spending by 2023 and triggering a secondary market correction.</div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-title">U.S. CPI Inflation Rate vs. Bitcoin Price, 2021–2023</div>
+      <div class="chart-wrap"><canvas id="macroChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: METHODOLOGY -->
+  <div class="section">
+    <div class="section-num">02 — Monitoring Methodology</div>
+    <div class="section-title">How Demand Signals Were Tracked in Real Time</div>
+    <p class="section-body">
+      The research approach combined <strong>macroeconomic analysis with field-level observation</strong>, using economic indicators to establish the broader demand context, then validating those signals through direct vendor engagement and consumer behavior observed at live events. This dual-layer methodology allowed for higher-confidence sourcing decisions, as quantitative models were tested against real-world conditions rather than applied in isolation.
+    </p>
+
+    <div class="method-grid">
+      <div class="method-card">
+        <div class="method-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="14" r="5" stroke="#2557d6" stroke-width="2"/>
+            <circle cx="26" cy="10" r="4" stroke="#2557d6" stroke-width="2" opacity=".5"/>
+            <circle cx="24" cy="26" r="4" stroke="#2557d6" stroke-width="2" opacity=".3"/>
+            <path d="M17 14h5M14 19l8 5" stroke="#2557d6" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="method-title">Field Research & Event Intelligence</div>
+        <div class="method-desc">Attended trade shows, pop-ups, and vendor events to observe consumer behavior firsthand and build sourcing relationships. On-the-ground insights surfaced demand signals that quantitative data alone could not capture.</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 28L12 18l7 5 7-10 5 4" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 8h2M5 14h2M5 20h2M5 26h2" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" opacity=".4"/>
+            <path d="M5 6v24" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" opacity=".3"/>
+          </svg>
+        </div>
+        <div class="method-title">Econometric Demand Modeling</div>
+        <div class="method-desc">Applied economic indicators, CPI, inflation rate, real consumer spending, and crypto asset prices, to model demand trajectories across product categories. Correlated macro shifts with observed secondary market pricing to identify early signals.</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 18h16M10 12h10M10 24h13" stroke="#e85d04" stroke-width="2" stroke-linecap="round"/>
+            <rect x="4" y="6" width="28" height="24" rx="3" stroke="#e85d04" stroke-width="2"/>
+            <circle cx="28" cy="12" r="3" fill="#e85d04"/>
+            <path d="M27 11.5l1 1 2-2" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="method-title">Vendor & Supply Chain Intelligence</div>
+        <div class="method-desc">Tracked distribution constraints and vendor network capacity to anticipate supply gaps. Vendor relationships built at events provided advance visibility into share timelines and restock windows before they became publicly known.</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="22" width="6" height="10" rx="1.5" fill="#059669"/>
+            <rect x="13" y="15" width="6" height="17" rx="1.5" fill="#059669" opacity=".7"/>
+            <rect x="22" y="9" width="6" height="23" rx="1.5" fill="#059669" opacity=".4"/>
+            <path d="M6 18l8-7 8 5 8-9" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="method-title">Data Synthesis & Strategic Reporting</div>
+        <div class="method-desc">Synthesized vendor data, pricing trends, and economic indicators into structured reports used for investment and sourcing decisions. Translated raw market observations into actionable recommendations with results that could be tracked.</div>
+      </div>
+      <div class="method-card" style="grid-column:1/-1;">
+        <div class="method-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="8" width="30" height="20" rx="3" stroke="#7c3aed" stroke-width="2"/>
+            <path d="M9 14h4M9 19h4" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" opacity=".4"/>
+            <circle cx="22" cy="16.5" r="4" stroke="#7c3aed" stroke-width="1.8"/>
+            <path d="M26 20.5l4 4" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M3 28h30" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" opacity=".2"/>
+          </svg>
+        </div>
+        <div class="method-title">Web Infrastructure & Inventory Monitoring</div>
+        <div class="method-desc">Applied working knowledge of retail backend systems, request routing, and inventory endpoint behavior to monitor stock availability at scale. Configured proxy and ISP networks to distribute monitoring across retailer infrastructure, enabling real-time visibility into restock events across multiple channels at the same timely.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: GPU -->
+  <div class="section">
+    <div class="section-num">03 — NVIDIA GPU Market</div>
+    <div class="section-title">The Mining-Driven Shortage & Post-Crash Correction</div>
+    <p class="section-body">
+      GPU demand from cryptocurrency mining is not new — it traces back to Bitcoin's early days in 2013, when consumer graphics cards were the primary mining hardware. That changed when custom ASICs replaced GPUs for Bitcoin, making general-purpose cards unprofitable for BTC mining. The cycle restarted with Ethereum, which was intentionally designed with an ASIC-resistant mining algorithm, making GPUs the only viable mining hardware again. This design choice is what made the 2020–2022 shortage so severe: every GPU sold was competing between two entirely separate demand pools — gamers and miners — with no dedicated supply chain for either.
+    </p>
+    <p class="section-body">
+      NVIDIA's RTX 30-series launched in September 2020 at <strong>$699 MSRP (RTX 3080)</strong>. According to research from Jon Peddie Research, crypto miners purchased an estimated <strong>25% of all GPUs produced in the first half of 2021</strong>. With pandemic-related chip shortages shrinking supply at the same timely, secondary market prices reached <strong>3x retail or higher</strong> by February 2021. The feedback loop of the shortage made it worse: miners had little incentive to sell cards that were actively generating returns, further restricting secondary market supply. When Ethereum transitioned to proof-of-stake in September 2022, eliminating GPU mining profitability overnight, miners began liquidating their entire fleets at the same timely. Combined with the RTX 40-series launch, the 30-series overcorrected below MSRP by early 2023 — creating a clear re-entry window before gaming demand stabilized prices.
+    </p>
+
+    <div class="chart-card">
+      <div class="chart-title">RTX 3080, Secondary Market Price vs. MSRP (2020–2023)</div>
+      <div class="chart-wrap"><canvas id="gpuChart"></canvas></div>
+    </div>
+
+    <div class="findings">
+      <div class="finding" style="border-color:var(--orange);">
+        <div class="finding-tag" style="color:var(--orange);">Key Driver: Dual Demand Pool</div>
+        <div class="finding-text">Ethereum's GPU-only mining design made GPUs the only viable mining hardware, putting gamers and miners in direct competition for the same supply. At peak ETH prices, a single RTX 3080 could generate $8–12/day in mining revenue, making miners unwilling to sell even at 3x retail markup.</div>
+      </div>
+      <div class="finding" style="border-color:var(--blue);">
+        <div class="finding-tag" style="color:var(--blue);">Signal: Post-Merge Liquidation Window</div>
+        <div class="finding-text">Ethereum's shift to proof-of-stake in September 2022 made GPU mining instantly unprofitable. The resulting mass liquidation of mining fleets pushed 30-series prices 10–20% below MSRP by Q1 2023, a short-term pricing gap before organic gaming demand restored normal pricing.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: PS5 -->
+  <div class="section">
+    <div class="section-num">04 — PlayStation 5</div>
+    <div class="section-title">Supply Constraints, Remote Demand & the Restock Race</div>
+    <p class="section-body">
+      The PlayStation 5 launched in November 2020 at <strong>$499 MSRP</strong> into one of the worst supply environments in consumer electronics history. Sony's semiconductor supply was constrained by the same global chip shortage affecting GPU manufacturers, while demand was amplified by locked-down consumers with stimulus money and nowhere to spend it. Units retailed for <strong>$800–1,200</strong> on secondary markets through 2021–2022. Restocks were sporadic, unpredictable, and sold out within minutes, making automated monitoring and alert systems essential to capturing inventory at retail price before bots cleared stock.
+    </p>
+
+    <div class="chart-card">
+      <div class="chart-title">PlayStation 5, Secondary Market Price vs. MSRP (2021–2023)</div>
+      <div class="chart-wrap"><canvas id="ps5Chart"></canvas></div>
+    </div>
+
+    <div class="findings">
+      <div class="finding" style="border-color:var(--purple);">
+        <div class="finding-tag" style="color:var(--purple);">Methodology: Restock Monitoring</div>
+        <div class="finding-text">PS5 restocks at major retailers (Best Buy, Target, Walmart) followed predictable patterns. Monitoring inventory endpoints and social signals allowed for advance positioning before public announcements.</div>
+      </div>
+      <div class="finding" style="border-color:var(--green);">
+        <div class="finding-tag" style="color:var(--green);">Signal: Margin Compression (2023)</div>
+        <div class="finding-text">By mid-2023, Sony had resolved the bulk of its supply constraints. Secondary margins compressed from 60–80% premium to 5–10%, signaling a category exit point for resale-focused inventory.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: COLLECTIBLES -->
+  <div class="section">
+    <div class="section-num">05 — PSA-Graded Collectibles</div>
+    <div class="section-title">Stimulus-Fueled Speculation & the Market Split</div>
+    <p class="section-body">
+      The collectibles market followed the same stimulus-driven pattern as electronics. Influencer coverage of Pokémon cards in early 2021, combined with millions of people at home with extra cash and no live entertainment, triggered a speculative wave that sent PSA-graded card prices up <strong>200–400%</strong> from pre-pandemic levels. By 2023, the broad market had corrected 40–60% as speculators exited. However, the correction was not uniform: high-grade cards (PSA 9/10) in low-population, iconic sets retained value far better than bulk mid-grade inventory, showing that the market had matured and only quality inventory held its value.
+    </p>
+
+    <div class="chart-card">
+      <div class="chart-title">PSA Collectibles Market, High-Grade vs. Broad Market Index (2020–2023, Base: 100)</div>
+      <div class="chart-wrap"><canvas id="psaChart"></canvas></div>
+    </div>
+
+    <div class="findings">
+      <div class="finding" style="border-color:var(--green);">
+        <div class="finding-tag" style="color:var(--green);">Insight: Quality Holds Value</div>
+        <div class="finding-text">PSA 10 cards in low-pop sets declined only 10–15% from peak, while the broad market fell 50%+. Concentration in high-grade assets was the correct strategy entering the correction.</div>
+      </div>
+      <div class="finding" style="border-color:var(--orange);">
+        <div class="finding-tag" style="color:var(--orange);">Risk: Bulk Inventory</div>
+        <div class="finding-text">Speculative buyers who held mid-grade common-set cards faced severe liquidity issues as the market cooled. Demand monitoring via sell-through data flagged this deterioration early.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECOMMENDATION -->
+  <div class="section">
+    <div class="section-num">06 — Strategic Takeaways</div>
+    <div class="section-title">What the Data Indicated for H1 2023</div>
+    <div class="rec">
+      <div class="rec-label">Analyst Conclusion</div>
+      <div class="rec-title">Macro Timing + Real-Time Monitoring = Sourcing Edge</div>
+      <p class="rec-body">
+        The core insight across all three categories was that <strong>macro signals and on-the-ground monitoring worked together</strong>, neither alone was sufficient. CPI and crypto data explained why pricing was where it was; social monitoring, search trends, and restock alerts determined when and where to act.<br><br>
+        <strong>GPUs:</strong> The post-mining correction created a below-MSRP acquisition window. Gaming demand remained structurally intact, making this a clear buy signal for Q1 2023 with an expected recovery to 10–15% above MSRP within 60–90 days.<br><br>
+        <strong>PS5:</strong> Supply normalization by mid-2023 shrank secondary margins to near zero. The category required exit or a pivot toward bundle configurations that maintained perceived value above commodity pricing.<br><br>
+        <strong>Collectibles:</strong> Market maturation favored quality concentration. Monitoring sell-through velocity on PSA 10 low-pop cards showed resilience while bulk inventory flagged as a liquidation priority.
+      </p>
+    </div>
+  </div>
+
+  <div class="report-footer">
+    <div>
+      <div class="footer-name">Emily Moeung</div>
+      <div class="footer-role">Market Strategy Intern · Majestix · Jan–Jun 2023</div>
+    </div>
+    <div style="font-size:13px;color:var(--muted);">Sources: BLS CPI, FRED, CoinGecko, StockX, eBay sold listings, PSA Pop Report</div>
+  </div>
+
+</div>
+<script>
+// MACRO CHART, CPI + BTC
+const macroLabels = ['Jan 21','Apr','Jul','Oct','Jan 22','Apr','Jul','Oct','Jan 23','Apr','Jun 23'];
+new Chart(document.getElementById('macroChart'), {
+  type: 'line',
+  data: {
+    labels: macroLabels,
+    datasets: [
+      {
+        label: 'CPI Inflation %',
+        data: [1.4, 4.2, 5.4, 6.2, 7.5, 8.3, 8.5, 7.7, 6.4, 4.9, 3.0],
+        borderColor: '#2557d6', backgroundColor: 'rgba(37,87,214,0.07)',
+        fill: true, tension: 0.4, pointRadius: 3, pointBackgroundColor: '#2557d6',
+        yAxisID: 'yCPI'
+      },
+      {
+        label: 'Bitcoin Price ($K)',
+        data: [32, 58, 34, 61, 38, 40, 22, 19, 23, 29, 30],
+        borderColor: '#e85d04', backgroundColor: 'rgba(232,93,4,0.05)',
+        fill: false, tension: 0.4, pointRadius: 3, pointBackgroundColor: '#e85d04',
+        yAxisID: 'yBTC'
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { boxWidth: 12, font: { size: 12 } } } },
+    scales: {
+      yCPI: { position: 'left', ticks: { callback: v => v + '%' }, grid: { color: '#f0ede9' }, min: 0, max: 12 },
+      yBTC: { position: 'right', ticks: { callback: v => '$' + v + 'K' }, grid: { display: false }, min: 0, max: 75 },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// GPU CHART
+const gpuLabels = ['Sep 20','Jan 21','Apr','Jul','Oct','Jan 22','Apr','Jul','Oct','Jan 23','Apr','Jun 23'];
+new Chart(document.getElementById('gpuChart'), {
+  type: 'line',
+  data: {
+    labels: gpuLabels,
+    datasets: [
+      {
+        label: 'Market Price ($)',
+        data: [850, 1200, 1800, 2200, 1900, 1600, 1300, 1050, 750, 580, 620, 660],
+        borderColor: '#e85d04', backgroundColor: 'rgba(232,93,4,0.08)',
+        fill: true, tension: 0.4, pointRadius: 3, pointBackgroundColor: '#e85d04',
+      },
+      {
+        label: 'MSRP ($699)',
+        data: [699,699,699,699,699,699,699,699,699,699,699,699],
+        borderColor: '#8a8580', borderDash: [6,4],
+        fill: false, pointRadius: 0, tension: 0,
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { boxWidth: 12, font: { size: 12 } } }, tooltip: { callbacks: { label: ctx => ` $${ctx.parsed.y}` } } },
+    scales: {
+      y: { ticks: { callback: v => '$' + v }, grid: { color: '#f0ede9' }, min: 400, max: 2400 },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// PS5 CHART
+const ps5Labels = ['Nov 20','Mar 21','Jun','Sep','Dec','Mar 22','Jun','Sep','Dec','Mar 23','Jun 23'];
+new Chart(document.getElementById('ps5Chart'), {
+  type: 'line',
+  data: {
+    labels: ps5Labels,
+    datasets: [
+      {
+        label: 'Market Price ($)',
+        data: [750, 900, 1050, 1150, 1100, 950, 850, 750, 650, 580, 510],
+        borderColor: '#7c3aed', backgroundColor: 'rgba(124,58,237,0.08)',
+        fill: true, tension: 0.4, pointRadius: 3, pointBackgroundColor: '#7c3aed',
+      },
+      {
+        label: 'MSRP ($499)',
+        data: [499,499,499,499,499,499,499,499,499,499,499],
+        borderColor: '#8a8580', borderDash: [6,4],
+        fill: false, pointRadius: 0, tension: 0,
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { boxWidth: 12, font: { size: 12 } } }, tooltip: { callbacks: { label: ctx => ` $${ctx.parsed.y}` } } },
+    scales: {
+      y: { ticks: { callback: v => '$' + v }, grid: { color: '#f0ede9' }, min: 400, max: 1300 },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// PSA CHART
+const psaLabels = ['Jan 20','Jul','Jan 21','Apr','Jul','Oct','Jan 22','Jul','Jan 23','Jun 23'];
+new Chart(document.getElementById('psaChart'), {
+  type: 'line',
+  data: {
+    labels: psaLabels,
+    datasets: [
+      {
+        label: 'PSA 10 High-Grade Index',
+        data: [100, 130, 200, 310, 380, 340, 290, 230, 200, 195],
+        borderColor: '#059669', backgroundColor: 'rgba(5,150,105,0.07)',
+        fill: true, tension: 0.4, pointRadius: 3, pointBackgroundColor: '#059669',
+      },
+      {
+        label: 'Broad Market Index',
+        data: [100, 140, 220, 390, 500, 420, 310, 180, 120, 110],
+        borderColor: '#e85d04', backgroundColor: 'rgba(232,93,4,0.05)',
+        fill: true, tension: 0.4, pointRadius: 3, pointBackgroundColor: '#e85d04',
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { boxWidth: 12, font: { size: 12 } } }, tooltip: { callbacks: { label: ctx => ` Index: ${ctx.parsed.y}` } } },
+    scales: {
+      y: { ticks: { callback: v => v }, grid: { color: '#f0ede9' }, min: 0, max: 550 },
+      x: { grid: { display: false } }
+    }
+  }
+});
+</script>
+</body>
+</html>
